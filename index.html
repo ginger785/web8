@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Задание 5</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="header container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-5 col-md-1">
+          <img class="logo img-fluid" src="logo-Photoroom.png" alt="Лого">
+        </div> 
+        <div class="col-7 col-md-3 text-end text-md-start">
+          <div class="header-title text-white fs-3">My page </div>
+        </div>  
+        <!-- Навигация -->
+        <nav class="menu-btns col-12 col-md-8 d-flex flex-column flex-md-row justify-content-md-end">
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#linkedlist">Список гиперссылок</a>
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#table">Таблица</a>
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#form">Форма</a>
+        </nav>
+      </div>  
+    </header>
+    <div class="container">
+      <div class="content container-lg mt-4">
+        <!-- Список гиперссылок -->
+        <a id="linkedlist"></a>
+          <div class="link-list col-12 order-md-1">
+            <ul>
+              <li><a href="http://kubsu.ru">КубГУ абсолютная гиперссылка</a></li>
+                <li>
+                  <a href="https://kubsu.ru">КубГУ гиперссылка с протоколом https</a>
+              </li>
+              <li>
+                <a href="https://kubsu.ru">
+                  <img src="kubanskiy.jpg" width="250" height="250" alt="Логотип КубГУ"
+                /></a>
+              </li>
+              <li>
+                <a href="links.html">Сокращенная ссылка на внутреннюю страницу</a>
+              </li>
+              <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+              <li><a href="#fragment-page">Ссылка на фрагмент текущей страницы</a></li>
+              <li>
+                <a href="index.html?p1=v1&?p2=v2&?p3=v3"
+                  >Ссылка с тремя параметрами в URL</a
+                >
+              </li>
+              <li>
+                <a href="index.html?id=fragment-page">Ссылка с параметром id в URL</a>
+              </li>
+              <li>
+                <a href="relative.html"
+                  >Относительная ссылка на страницу в текущем каталоге</a
+                >
+              </li>
+              <li>
+                <a href="about/about.html"
+                  >Относительная ссылка на страницу в каталоге about</a
+                >
+              </li>
+              <li>
+                <a href="../links.html"
+                  >Ссылка на страницу в каталоге уровня выше текущей</a
+                >
+              </li>
+              <li>
+                <a href="../../practice.html"
+                  >Ссылка на страницу в каталоге двумя уровнями выше текущей</a
+                >
+              </li>
+              <li>
+                <p>
+                  Контекстная ссылка: <br />
+                  Вы можете ознакомиться с
+                  <a href="https://www.kubsu.ru/ru/all_achievments">достижениями</a>
+                  КубГУ.
+                </p>
+              </li>
+              <li>
+                <a href="https://kubsu.ru/index.php#block-system-main"
+                  >Ссылка на фрагмент страницы стороннего сайта</a
+                >
+              </li>
+              <img src="un-1.jpg" width="300" height="200" alt="Здание университета" usemap="#kubsu"/>
+              <li>
+                <map name="kubsu">
+                  <area
+                    shape="rect"
+                    coords="86,148,228,153"
+                    href="https://kubsu.ru/index.php"
+                    alt="Сайт университета"
+                  />
+                  <area
+                    shape="circle"
+                    coords="268,175,18"
+                    href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png#filehistory"
+                    alt="История логотипа КубГУ"
+                  />
+                </map>
+              </li>
+              <li><a href="">Ссылка с пустым href</a></li>
+              <li><a>Ссылка без href</a></li>
+              <li>
+                <a href="https://kubsu.ru" rel="nofollow"
+                  >Ссылка, по которой запрещен переход поисковиками</a
+                >
+              </li>
+              <li>
+                <a href="https://kubsu.ru" rel="noindex"
+                  >Ссылка, запрещенная для индексации поисковиками</a
+                >
+              </li>
+              <li>
+                <ol>
+                  <li>
+                    <a
+                      href="https://www.kubsu.ru/ru/university/history-tradition"
+                      title="История и традиции КубГУ"
+                      >Познакомьтесь с историями и традициями КубГУ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                        href="https://www.kubsu.ru/ru/science"
+                        title="Наука и инновации КубГУ"
+                        >Вступайте в научное сообщество КубГУ</a
+                    >
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <a href="ftp://user:pass123@adress.ru/Temp/file.txt"
+                  >ссылка на файл на сервере FTP с авторизацией</a>
+              </li>  
+            </ul>
+          </div>
+          <!-- Таблица -->
+          <a id="table"></a>
+          <div class="table-container col-12" style="overflow-x: auto;">
+            <table class="table table-striped table-responsive mt-4">
+              <thead>
+                <tr>
+                  <th id="1" colspan="2">Машина</th> 
+                  <th id="3">Описание</th>
+                  <th id="4">Цена</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>BMW</td>
+                  <td>BMW M8 Competition, BMW M8 Coupe и BMW M850i xDrive Coupe</td>
+                  <td>
+                    Автомобили M BMW 8 серии Coupe доставят Вам максимальное
+                    удовольствие от вождения в атмосфере спортивного стиля и роскоши
+                    как на дорогах, так и на гоночной трассе
+                  </td>
+                  <td>от 12 500 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Mercedes-Benz</td>
+                  <td>Mercedes-Benz AMG GT 63 S</td>
+                  <td>
+                    Mercedes-Benz AMG — это автомобили, которые воплощают передовые
+                    достижения автомобильной индустрии. Они разрабатываются
+                    специальным подразделением компании в Аффальтербахе и
+                    отличаются: потрясающей динамикой, отточенной управляемостью,
+                    стильным и эффектным внешним видом и интерьером, уникальными
+                    опциями комфорта.
+                  </td>
+                  <td>от 9 900 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Nissan</td>
+                  <td>Nissan GT-R</td>
+                  <td>
+                    Nissan GT-R — автомобиль, выпускаемый японской маркой Nissan с
+                    2007 года. Он имеет компоновку сидений 2 + 2 и считается
+                    одновременно спортивным автомобилем и Grand tourer.Автомобиль
+                    построен на платформе PM и оснащён инновационными концепциями и
+                    технологиями, такими как улучшенная аэродинамика, двигатель
+                    VR38DETT, активная подвеска и система полного привода ATTESA
+                    E-TS Pro.
+                  </td>
+                  <td>от 7 000 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Porsche</td>
+                  <td>Porsche 911 GT3 RS</td>
+                  <td>
+                    Porsche 911 GT3 RS — это двухместное спортивное купе
+                    премиум-класса. Технические характеристики: оппозитная
+                    атмосферная бензиновая шестерка объёмом 3996 кубических
+                    сантиметров; мощность — 520 лошадиных сил при 8250 об/мин и 470
+                    Нм крутящего момента при 6000 оборотах коленчатого вала в
+                    минуту; семиступенчатая преселективная роботизированная коробка
+                    передач с двумя сцеплениями;максимальная скорость — 312
+                    километров в час.
+                  </td>
+                  <td>35 000 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Ferrari</td>
+                  <td>Ferrari F8 Tributo</td>
+                  <td>
+                    Ferrari F8 Tributo — это двухместное купе, которое было
+                    представлено на международном автосалоне в Женеве 5 марта 2019
+                    года. Основные характеристики: 720-сильный бензиновый двигатель
+                    V8 turbo — самый мощный мотор V8 в истории Ferrari;
+                    исключительная управляемость благодаря применению передовых
+                    решений в области аэродинамики; система контроля управляемости
+                    Side Slip Angle Control новейшей версии 6.1; система Ferrari
+                    Dynamic Enhancer (FDE+), которая индивидуально регулирует
+                    давление в тормозных механизмах.
+                  </td>
+                  <td>от 30 000 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Pagani</td>
+                  <td>Pagani Zonda</td>
+                  <td>
+                    Pagani Zonda — среднемоторный спортивный автомобиль итальянского
+                    производителя спортивных автомобилей Pagani. Были выпущены как
+                    2-дверные купе, так и родстер, а также третий новый вариант —
+                    barchetta. Конструкция в основном выполнена из углеродного
+                    волокна.
+                  </td>
+                  <td>от 171 000 000 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> 
+
+        <div class="calc p-3">
+          <h1>Калькулятор стоимости заказа</h1>
+          <label for="quantity">Количество:</label>
+          <input type="number" class="p-1 mb-3" id="quantity" min="1" value="1">
+          <label>Автомобиль:</label>
+          <div style="display: flex;">
+              <input type="radio" id="service1" name="service" value="12500000" checked>
+              <label for="service1">BMW M8 Competition (12 500 000 руб.)</label>
+          </div>
+          <div style="display: flex;">
+              <input type="radio" id="service2" name="service" value="9900000">
+              <label for="service2">Mercedes-Benz AMG GT 63 S (9 900 000 руб.)</label>
+          </div>
+          <div style="display: flex;">
+              <input type="radio" id="service3" name="service" value="35000000">
+              <label for="service3">Porsche 911 GT3 RS (35 000 000 руб.)</label>
+          </div>
+          <div style="display: flex;">
+              <input type="radio" id="service4" name="service" value="30000000">
+              <label for="service4">Ferrari F8 Tributo (30 000 000 руб.)</label>
+          </div>
+          <div style="display: flex;">
+              <input type="radio" id="service5" name="service" value="7000000">
+              <label for="service5">Nissan GT-R (7 000 000 руб.)</label>
+          </div>
+          <div style="display: flex;">
+              <input type="radio" id="service6" name="service" value="171000000">
+              <label for="service6">Pagani Zonda (171 000 000 руб.)</label>
+          </div><br>
+          <label for="option">Комплектация:</label>
+          <select id="option">
+              <option value="0">Без комплектации</option>
+              <option value="1000000">Competition (+1000000 руб.)</option>
+              <option value="500000">Comfort(+500000 руб.)</option>
+          </select><br>
+          <label for="property">Страховка:</label>
+          <div style="display: flex;">
+              <input type="checkbox" id="property" value="100000">
+              <label for="property">Каско (+100000 руб.)</label>
+          </div><br>
+          <div id="result" class="mt-1"></div>
+      </div><br>
+      <div class="gallery-container">
+        <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="gallery">
+            <div class="slides">
+                <div class="slide">
+                    <img src="BMW.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="Dodge.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="Ferrari.png" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="mazda.jpg" alt="Image 4">
+                </div>
+                <div class="slide">
+                    <img src="Merc.png" alt="Image 5">
+                </div>
+                <div class="slide">
+                    <img src="Nissan.png" alt="Image 6">
+                </div>
+                <div class="slide">
+                    <img src="Pagani.png" alt="Image 7">
+                </div>
+                <div class="slide">
+                    <img src="Porche.png" alt="Image 8">
+                </div>
+            </div>
+        </div>
+        <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <div class="pager">
+        <span id="current-page">1</span> / <span id="total-pages">5</span>
+    </div><br>
+
+        <h2 class="py-1 rounded-pill m-3 mt-5 col-5 text-center">Зарегистрируйтесь на нашем сайте</h2>
+        <!-- Форма -->
+        <a id="form" class="mt-4"></a>
+        <button style="font-size: 24px; text-align: center;cursor: pointer;outline: none;color: #fff;background-color: #931e97;border: none;border-radius: 15px;box-shadow: 0 9px #251d3f; color: #000000;display: flex;" id="openPopup">Открыть форму</button><br>
+        <div class="popup" id="popup">
+          <div class="popup-content">
+          <button id="closePopup" class="close-button">&times;</button><br>
+          <h2>Форма обратной связи</h2>
+          <form id="contactForm">
+              <label for="name">ФИО:</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+              <label for="phone">Телефон:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+
+              <label for="organization">Организация:</label>
+              <input type="text" id="organization" name="organization" placeholder="Ваша организация">
+
+              <label for="message">Сообщение:</label>
+              <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+
+              <div style="display: flex;">
+                  <input type="checkbox" id="agreement" name="agreement" required> 
+                  <label for="agreement">Я согласен с <a href="#">политикой обработки персональных данных</a></label>
+              </div>
+
+              <button type="submit" id="submitBtn">Отправить</button>
+              <div class="message" id="messageArea"></div>
+          </form>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <!--Подвал -->
+    <footer class="footer container-fluid text-start text-white py-3">
+      <p>&copy; Мерзлякова В.В. 27/2</p>
+    </footer>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const hiddenBlock = document.getElementById("hiddenBlock");
+
+      toggleButton.addEventListener("click", () => {
+      if (hiddenBlock.style.display === "block") {
+          hiddenBlock.style.display = "none";
+      } else {
+          hiddenBlock.style.display = "block";
+      }
+      });
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        const quantityInput = document.getElementById('quantity');
+        const serviceRadios = document.querySelectorAll('input[name="service"]');
+        const optionSelect = document.getElementById('option');
+        const propertyCheckbox = document.getElementById('property');
+        const calculateButton = document.getElementById('calculate');
+        const resultDiv = document.getElementById('result');
+    
+        function calculateCost() {
+          const quantity = parseInt(quantityInput.value);
+          let price = 0;
+          let selectedService = null;
+    
+          for (const radio of serviceRadios) {
+            if (radio.checked) {
+              selectedService = radio;
+              price = parseInt(radio.value);
+              break;
+            }
+          }
+    
+        if (selectedService) {
+            if (selectedService.id === 'service4' || selectedService.id === 'service5' || selectedService.id === 'service6') {
+              optionSelect.style.display = 'block';
+              propertyCheckbox.style.display = 'none';
+              if(selectedService.id === 'service4' || selectedService.id === 'service5'){
+                propertyCheckbox.style.display = 'block';
+                if (propertyCheckbox.checked ) {
+                    price += parseInt(propertyCheckbox.value);
+                }   
+                }
+              price += parseInt(optionSelect.value);
+            }
+            else if (selectedService.id === 'service3' || selectedService.id === 'service1' || selectedService.id === 'service2') {
+              propertyCheckbox.style.display = 'none';
+              optionSelect.style.display = 'none';
+              if(selectedService.id === 'service3' || selectedService.id === 'service1'){
+                propertyCheckbox.style.display = 'block';
+                if (propertyCheckbox.checked ) {
+                    price += parseInt(propertyCheckbox.value);
+                }
+              } 
+            }
+            else {
+              optionSelect.style.display = 'none';
+              propertyCheckbox.style.display = 'none';
+            }
+          }
+          const totalCost = quantity * price;
+          resultDiv.textContent = `Стоимость заказа: ${totalCost} руб.`;
+        }
+        serviceRadios.forEach(radio => {
+          radio.addEventListener('change', calculateCost);
+        });
+        optionSelect.addEventListener('change', calculateCost);
+        propertyCheckbox.addEventListener('change', calculateCost);
+        quantityInput.addEventListener('change', calculateCost);
+
+
+        let currentSlide = 0; // Индекс текущей страницы
+        const totalSlides = 8; // Общее количество слайдов
+        const slidesToShow = window.innerWidth <= 768 ? 1 : 3; // Установка количества слайдов для показа
+        const totalPages = window.innerWidth <= 768 ? 8 : 6; // Общее количество страниц
+
+        document.getElementById('total-pages').textContent = totalPages;
+
+        function updatePager() {
+            document.getElementById('current-page').textContent = currentSlide + 1;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+
+            // Проверка границ текущего индекса страницы
+            if (currentSlide < 0) {
+                currentSlide = 0;
+            } else if (currentSlide >= totalPages) {
+                currentSlide = totalPages - 1;
+            }
+
+            // Вычисляем смещение для слайдов
+            const gallery = document.querySelector('.slides');
+            const offset = window.innerWidth <= 768 ? -currentSlide * (100 / 1) : -currentSlide * (100 / 3);
+            gallery.style.transform = `translateX(${offset}%)`;
+            updatePager();
+        }
+
+        const openPopupBtn = document.getElementById('openPopup');
+    const popup = document.getElementById('popup');
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const messageArea = document.getElementById('messageArea');
+    const closePopupBtn = document.getElementById('closePopup');
+
+    // Загружаем данные из LocalStorage
+    const storedData = localStorage.getItem('formData');
+    if (storedData) {
+      const data = JSON.parse(storedData);
+      document.getElementById('name').value = data.name || '';
+      document.getElementById('email').value = data.email || '';
+      document.getElementById('phone').value = data.phone || '';
+      document.getElementById('organization').value = data.organization || '';
+      document.getElementById('message').value = data.message || '';
+    }
+
+    // Открыть попап
+    openPopupBtn.addEventListener('click', () => {
+      popup.style.display = 'flex';
+      history.pushState({}, '', '#contact'); // Изменить URL
+    });
+
+    // Закрыть попап
+    closePopupBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+      history.pushState({}, '', '#'); // Вернуть URL
+    });
+
+    // Закрыть попап при нажатии "Назад"
+    window.addEventListener('popstate', () => {
+      popup.style.display = 'none';
+    });
+
+    // Отправка формы
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      // Проверка согласия с политикой
+      const agreementCheckbox = document.getElementById('agreement');
+      if (!agreementCheckbox.checked) {
+        messageArea.textContent = 'Пожалуйста, согласитесь с политикой обработки персональных данных.';
+        return;
+      }
+
+      // Отключение кнопки отправки
+      submitBtn.disabled = true;
+      messageArea.textContent = 'Отправка...';
+
+      // Создание объекта с данными формы
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        organization: document.getElementById('organization').value,
+        message: document.getElementById('message').value,
+      };
+
+      // Метод XHR
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://formcarry.com/s/t5C3Z9nIbL-', true); 
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          messageArea.textContent = 'Ошибка при отправке формы. Пожалуйста, попробуйте ещё раз.';
+          contactForm.reset(); 
+          localStorage.setItem('formData', JSON.stringify(formData)); 
+        } else {
+          messageArea.textContent = 'Форма успешно отправлена!';
+        }
+        submitBtn.disabled = false;
+      };
+      xhr.onerror = function() {
+        messageArea.textContent = 'Форма успешно отправлена!';
+        submitBtn.disabled = false;
+      };
+      xhr.send(JSON.stringify(formData));
+    });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,282 @@
+body {
+    background-color: #e38bbf !important;
+    text-decoration: none !important;
+}
+
+a {
+    color: #bc2c79 !important;
+    text-decoration: none !important;
+
+}
+
+a:hover {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+button {
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #5f5fb3;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #251d3f;
+    color: #000000;
+    display: flex;
+}
+
+button:hover {
+    background-color: #4f4f8a;
+}
+
+button:focus {
+    background-color: #4a4a8a;
+    box-shadow: 0 5px #221a36;
+    transform: translateY(4px);
+}
+
+#hiddenBlock {
+    display: none;
+}
+
+/*  Шапка */
+.header {
+    background-color: #bc2c79 !important;
+}
+
+
+.navcont {
+    background-color: #d865a8 !important;
+
+}
+
+.navcont:hover {
+    background-color: #F4DBDB;
+    border: 2px solid #CD4662;
+    border-radius: 8px;
+    color: black;
+}
+
+h2 {
+    background-color: #bc2c79;
+}
+
+.link-list {
+    display: flex;
+    order: 0;
+}
+
+.table-container {
+    display: flex;
+    order: 1
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Калькулятор */
+
+.calc {
+    border: 1px solid #4e3030;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+
+}
+
+input[type="number"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: none; /* Скрываем селект по умолчанию */
+}
+
+input[type="checkbox"] {
+    display: none; /* Скрываем чекбокс по умолчанию */
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Галерея*/
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: auto; /* Центрирование контейнера */
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 33.33%; /* Показать 3 изображения одновременно */
+    box-sizing: border-box; /* Чтобы не было лишних отступов */
+    border-right: 10px solid #ccc; /* Граница справа от каждого слайда */
+}
+
+.slide:last-child {
+    border-right: none;
+}
+
+.slide img {
+    width: 100%; /* Изображение занимает 100% от контейнера */
+    height: 200px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обеспечивает обрезку изображения при изменении размеров */
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 1;
+}
+
+.pager {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*форма*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#agreement{
+    display: block;
+}
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px; /* Ширина формы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Добавляем относительное позиционирование */
+}
+
+.popup-content h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content textarea {
+    height: 100px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #763f96;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-content button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.popup-content .error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.popup-content .message {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.close-button {
+    margin: 0 0 0 auto;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+}
+
+.close-button:hover {
+      color: red;
+ }
+
+/* подвал */
+footer {
+    background-color: #c61f6a;
+}
+
+@media(max-width:769px) {
+
+    .link-list {
+        order: 0;
+    }
+
+    .table-container {
+        order: -2;
+    }
+
+    .calc {
+        order: -1;
+    }
+
+    .slide {
+        border-right: none; /* Убираем границу для мобильных устройств */
+        min-width: 100%; /* На мобильных устройствах показываем 1 изображение */
+    }
+
+    .popup-content {
+        max-width: 90%;
+    }
+}
