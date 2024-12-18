@@ -43,21 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Отправка данных
-        try {
-            const response = await fetch('https://formcarry.com/s/t5C3Z9nIbL-', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                messageArea.textContent = 'Форма успешно отправлена!';
-                contactForm.reset();
-            } else {
-                messageArea.textContent = 'Ошибка при отправке формы.';
-            }
-        } catch (error) {
-            messageArea.textContent = 'Ошибка сети. Проверьте подключение к интернету.';
-        }
+        const response = await fetch('https://formcarry.com/s/lG6RJuiYn-l', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+        messageArea.textContent = 'Форма успешно отправлена!';
+        contactForm.reset();
     });
 });
